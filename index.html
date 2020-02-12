@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            hello JAVASCRIPT!
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            THIS IS MY FIRST JAVASCRIPT PROJECT. 
+        </h1>
+        <!-- JavaScript can change HTML attribute values. -->
+        <p id = "demo"> JAVASCRIPT</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript"'>click me!</button>
+
+        <!-- In this example JavaScript changes the value of the src (source) attribute of an <img> tag: -->
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">TURN ON THE LIGHT</button>
+
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">TURN OFF THE LIGHT</button>
+        
+        <!-- In this example JavaScript changes the size of the  attribute: -->
+
+        <p id="demo1">Hello WORLD</p>
+        <button onclick="document.getElementById('demo1').style.color = 'blue'">Hello WORLD</button>
+        
+        <!-- Hiding HTML elements can be done by changing the display style: -->
+        
+        <p id="demo2">BYE WORLD</p>
+        <button onclick="document.getElementById('demo2').style.display = 'none'">press</button>
+
+        <p id="demo3" style="display:none">Hello JavaScript!</p>
+        <button onclick="document.getElementById('demo3').style.display = 'block'">click</button>
+
+        <!-- The function is invoked (called) when a button is clicked:-->
+        
+        <p id="fun">A paragraph</p>
+        <button onclick="myfunction()">try it</button>
+        <script src="functions.js"></script>
+    </body>
+</html>
